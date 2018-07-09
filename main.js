@@ -6,7 +6,7 @@ let app = new Vue({
             msg: 'Hello,World'
         }
     },
-    render(c) {
+    render:function(c){
         var self = this
         return c('div', [
             c('input', {
@@ -19,7 +19,7 @@ let app = new Vue({
                     }
                 }
             }),
-            self.msg
+            c(self.msg)
         ])
     }
 })

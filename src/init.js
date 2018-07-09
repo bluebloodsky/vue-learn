@@ -5,5 +5,6 @@ export function initMixin(Vue) {
         vm.$options = options
         vm._self = vm
         initState(vm)
+        vm.mount(document.querySelector(options.el))
     }
 }
